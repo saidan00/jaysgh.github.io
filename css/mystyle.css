@@ -58,7 +58,7 @@ body {
 #nav {
   float: left;
   margin: 0;
-  width: 25%;
+  width: 20%;
 }
 
 #nav h1.gallery-title {
@@ -72,7 +72,7 @@ body {
 #article {
   float: right;
   margin: 0;
-  width: 75%;
+  width: 80%;
 }
 
 #section::after {

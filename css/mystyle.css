@@ -34,6 +34,7 @@ body {
 }
 
 #header-right {
+  display: block;
   float: right;
   padding: 36.8px;
   overflow: hidden;
@@ -148,9 +149,9 @@ div.description {
 @media only screen and (max-width: 600px) {
   #header-right {
     padding: 5px 20px;
-  clear: both;
-  display: none;
-  float: none;
+    clear: both;
+    display: none;
+    float: none;
   }
   #header-right a {
     display: block;

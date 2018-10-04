@@ -34,7 +34,6 @@ body {
 }
 
 #header-right {
-  display: block;
   float: right;
   padding: 36.8px;
   overflow: hidden;
@@ -146,7 +145,8 @@ div.description {
 #footer a:hover {
   border-bottom: 2px solid #FFF;
 }
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 712px) {
   #header-right {
     padding: 5px 20px;
     clear: both;

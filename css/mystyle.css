@@ -34,8 +34,9 @@ body {
 }
 
 #header-right {
-  padding: 20px 20px 0;
   float: right;
+  padding: 36.8px;
+  overflow: hidden;
 }
 #header-right a {
   padding: 16px;
@@ -51,7 +52,18 @@ body {
 #header-right a:hover {
   background: rgba(230, 230, 230, 0.4);
 }
-
+#header-right-button {
+  padding: 52.8px 40px;
+  color: #FFF;
+  float: right;
+  display: none;
+  transform: scale(2, 1.5);
+}
+#header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 #section {
   color: #FFF;
 }
@@ -59,7 +71,7 @@ body {
 #nav {
   float: left;
   margin: 0;
-  width: 25%;
+  width: 20%;
 }
 
 #nav h1.gallery-title {
@@ -71,9 +83,9 @@ body {
 }
 
 #article {
-  float: right;
+  float: left;
   margin: 0;
-  width: 75%;
+  width: 80%;
 }
 
 #section::after {
@@ -135,13 +147,27 @@ div.description {
 }
 @media only screen and (max-width: 600px) {
   #header-right {
+    padding: 5px 20px;
+  clear: both;
   display: none;
+  float: none;
+  }
+  #header-right a {
+    display: block;
+    float: none;
+    text-align: left;
+  }
+  #header-right-button {
+    display: block;
   }
   #nav, #article {
     width: 100%;
   }
+
   div.gallery {
-    margin-left: auto;
-    margin-right: auto;
-    float: none;
+    margin: 8px;
+    padding: 10px;
+    width: 44%;
+    height: auto;
+    float: left;
 }

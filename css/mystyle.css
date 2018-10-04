@@ -14,7 +14,7 @@ body {
   width: 100%;
   background: #37474f;
   overflow: hidden;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 5px -5px #333;
 }
 
 #logo {
@@ -27,6 +27,7 @@ body {
   border-radius: 50%;
   width: 100px;
   transition: 0.5s;
+  box-shadow: 3px 5px 5px -2px #333;
 }
 #logo img:hover {
   transform: scale(1.15, 1.15);
@@ -66,7 +67,7 @@ body {
   padding: 16px;
   border-radius: 5px;
   background-color: #29b6f6;
-  box-shadow: 3px 5px 10px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 5px 5px -2px #333;
 }
 
 #article {
@@ -95,7 +96,7 @@ div.gallery {
   float: left;
   background: #718792;
   border-radius: 5px;
-  box-shadow: 3px 5px 10px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 5px 5px -2px #333;
   transition: 0.5s;
 }
 div.gallery:hover {
@@ -122,6 +123,7 @@ div.description {
   background: #37474f;
   color: #FFF;
   text-align: center;
+  box-shadow: 0 -5px 5px -5px #333;
 }
 #footer a {
   color: #FFF;
@@ -130,4 +132,16 @@ div.description {
 }
 #footer a:hover {
   border-bottom: 2px solid #FFF;
+}
+@media only screen and (max-width: 600px) {
+  #header-right {
+  display: none;
+  }
+  #nav, #article {
+    width: 100%;
+  }
+  div.gallery {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
 }

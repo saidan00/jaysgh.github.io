@@ -74,12 +74,13 @@ body {
   width: 20%;
 }
 
-#nav h1.gallery-title {
+.gallery-title {
   margin: 10px;
   padding: 16px;
   border-radius: 5px;
   background-color: #29b6f6;
   box-shadow: 3px 5px 5px -2px #333;
+  overflow: hidden;
 }
 
 #article {
@@ -112,7 +113,7 @@ div.gallery {
   transition: 0.5s;
 }
 div.gallery:hover {
-  transform: scale(1.15, 1.15);
+  opacity: 0.4;
 }
 div.gallery img {
   margin: 0;
@@ -126,6 +127,7 @@ div.description {
   width: 100%;
   background:
   border-radius: 4px;
+  overflow: hidden;
 }
 
 #footer {
@@ -144,6 +146,20 @@ div.description {
 }
 #footer a:hover {
   border-bottom: 2px solid #FFF;
+}
+
+.icon {
+  float: right;
+  width: 30px;
+  height: 30px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.naruto-title {
+  background: #EA9828;
+}
+.db-title {
+  background: #F85B1A;
 }
 
 @media only screen and (max-width: 712px) {
@@ -171,4 +187,9 @@ div.description {
     width: 44%;
     height: auto;
     float: left;
+  }
+  div.description {
+    height: 48px;
+    font-size: 16px;
+  }
 }

@@ -33,12 +33,12 @@ body {
   transform: scale(1.15, 1.15);
 }
 
-#header-right {
+.header-right {
   float: right;
   padding: 36.8px;
   overflow: hidden;
 }
-#header-right a {
+.header-right a {
   padding: 16px;
   color: #FFF;
   font-weight: bold;
@@ -49,16 +49,18 @@ body {
   float: left;
   transition: 0.5s;
 }
-#header-right a:hover {
+.header-right a:hover {
   background: rgba(230, 230, 230, 0.4);
 }
-#header-right-button {
-  padding: 52.8px 40px;
+
+.header-button {
   color: #FFF;
-  float: right;
-  display: none;
   transform: scale(2, 1.5);
+  float: right;
+  padding: 52.8px 25px 52.8px 0;
+  display: none;
 }
+
 #header::after {
     content: "";
     display: table;
@@ -155,6 +157,9 @@ div.description {
   margin-top: auto;
   margin-bottom: auto;
 }
+.header-right .trolling-face {
+  display: none;
+}
 .naruto-title {
   background: #EA9828;
 }
@@ -162,19 +167,14 @@ div.description {
   background: #F85B1A;
 }
 
-@media only screen and (max-width: 712px) {
-  #header-right {
+@media screen and (max-width: 712px) {
+  .header-right {
     padding: 5px 20px;
     clear: both;
+    float: none;
     display: none;
-    float: none;
   }
-  #header-right a {
-    display: block;
-    float: none;
-    text-align: left;
-  }
-  #header-right-button {
+  .header-button {
     display: block;
   }
   #nav, #article {
@@ -191,5 +191,15 @@ div.description {
   div.description {
     height: 48px;
     font-size: 16px;
+  }
+}
+@media screen and (max-width: 712px) {
+  .header-right.responsive {
+    position: relative;
+    display: block;
+  }
+  .header-right.responsive a {
+    float: none;
+    text-align: center;
   }
 }

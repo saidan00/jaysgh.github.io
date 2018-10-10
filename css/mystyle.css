@@ -200,6 +200,6 @@ div.description {
   }
   .header-right.responsive a {
     float: none;
-    text-align: center;
+    text-align: left;
   }
 }
